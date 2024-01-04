@@ -9,6 +9,9 @@ media
 # MacOS specific #
 .DS_Store
 
+# Docker data #
+docker/data/**/**.*
+
 # Backup files # 
 *.bak 
 
