@@ -15,3 +15,8 @@ def index(request):
 
 def exercise_details(request, exercise_id):
     return HttpResponse("You are looking at the eercise with id %s" % exercise_id)
+
+
+def delete_exercise(request):
+    template = loader.get_template('exercise/new_exercise.html')
+    return HttpResponse(template.render(request))
