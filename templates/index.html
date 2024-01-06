@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+</head>
+<body>
+    <h1>My gym</h1>
+    {% if all_exercises %}
+        <ul>
+            {% for exercise in all_exercises %}
+                <li>{{ exercise.name }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
